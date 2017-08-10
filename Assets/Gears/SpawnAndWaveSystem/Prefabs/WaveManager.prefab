@@ -1,0 +1,493 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &135316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 472834}
+  - component: {fileID: 11480312}
+  m_Layer: 0
+  m_Name: SpawnPoint 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &140242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 460874}
+  - component: {fileID: 11419138}
+  m_Layer: 0
+  m_Name: SpawnPoint 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &153850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 406536}
+  - component: {fileID: 11413394}
+  - component: {fileID: 11438392}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 474272}
+  - component: {fileID: 11483168}
+  m_Layer: 0
+  m_Name: SpawnPoint 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406536
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 472834}
+  - {fileID: 460874}
+  - {fileID: 474272}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &460874
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.06, y: 0, z: 5.44}
+  m_LocalScale: {x: 1.47, y: 1.47, z: 1.47}
+  m_Children: []
+  m_Father: {fileID: 406536}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &472834
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.02, y: 0, z: 0.03}
+  m_LocalScale: {x: 1.47, y: 1.47, z: 1.47}
+  m_Children: []
+  m_Father: {fileID: 406536}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &474272
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.38, y: 0, z: -3.34}
+  m_LocalScale: {x: 1.47, y: 1.47, z: 1.47}
+  m_Children: []
+  m_Father: {fileID: 406536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11413394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ae4e34ca86dc94c8f3756ef874f43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWave: 0
+  waveState: 0
+  debugToggle: 0
+  gizmosColor: {r: 0, g: 0.8758622, b: 1, a: 1}
+  gizmosSize: 0.4
+  settingToggle: 0
+  reportedPoints: 0
+  autoStart: 1
+  autoProceed: 1
+  waveDelay: 5
+  separatedPattern: 1
+  waveSequence: []
+  childSpawnPoints:
+  - {fileID: 11480312}
+  - {fileID: 11419138}
+  - {fileID: 11483168}
+  waveEventToggle: 0
+  onWaveStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 536574416374697665
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onWaveFinish:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onWaveClear:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 536574416374697665
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  waveProcessingEventToggle: 0
+  onWaveProceedInt:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Gears.UnityIntEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onWaveProceedString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 7365745f74657874
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Gears.UnityStringEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  sequenceEventToggle: 0
+  onAllWaveClear:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 537461727457617665
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11438392}
+        m_MethodName: 4d616e75616c506f7274616c
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e47616d654f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &11419138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd0b3aa83d98474ebce8009f41e429c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlled: 1
+  manager: {fileID: 11413394}
+  mode: 0
+  spawnAreaShape: 1
+  spawnPointType: 0
+  auto: 0
+  autoRespawn: 0
+  recoverTime: 60
+  hordeLod: 0
+  player: {fileID: 0}
+  activeDistance: 50
+  hordeActiveRefreshTime: 0.5
+  hordeTag: 
+  spawnState: 0
+  enemys: []
+  radius: 1.47
+  spawnEffect: {fileID: 0}
+  separateDistance: 5
+  spawnBuffer: 0.5
+  etc: 0
+  hordePower: 1
+  drawPoint: 0
+  selfPoints:
+  - {x: 1.0806046, y: 0, z: -1.6829419}
+  - {x: 0.09436003, y: 0, z: -1.9977728}
+  - {x: -0.9171684, y: 0, z: -1.777302}
+  - {x: -1.6829423, y: 0, z: -1.0806043}
+  - {x: -1.9977728, y: 0, z: -0.09435991}
+  - {x: -1.777302, y: 0, z: 0.917168}
+  - {x: -1.0806042, y: 0, z: 1.6829423}
+  - {x: -0.094359584, y: 0, z: 1.9977728}
+  - {x: 0.9171684, y: 0, z: 1.7773021}
+  - {x: 1.682942, y: 0, z: 1.0806044}
+  - {x: 1.9977728, y: 0, z: 0.09436023}
+  - {x: 4.70241, y: -1.5225404e-17, z: -2.3292978}
+  worldPoints:
+  - {x: 0.52848876, y: 0, z: 2.9660754}
+  - {x: -0.9212907, y: 0, z: 2.503274}
+  - {x: -2.4082375, y: 0, z: 2.827366}
+  - {x: -3.533925, y: 0, z: 3.8515117}
+  - {x: -3.996726, y: 0, z: 5.301291}
+  - {x: -3.672634, y: 0, z: 6.788237}
+  - {x: -2.648488, y: 0, z: 7.913925}
+  - {x: -1.1987085, y: 0, z: 8.376726}
+  - {x: 0.28823757, y: 0, z: 8.052634}
+  - {x: 1.4139249, y: 0, z: 7.0284886}
+  - {x: 1.8767262, y: 0, z: 5.5787096}
+  - {x: 5.8525434, y: -2.2381345e-17, z: 2.0159323}
+  closePoints: []
+  onSequenceStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onSequenceFinish:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  lastSpawnPosition: {x: 3.4028235e+38, y: 3.4028235e+38, z: 3.4028235e+38}
+--- !u!114 &11438392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766a9c0aece935c41abe837f21f3fc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmosColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  gizmosSize: 3
+  targetPosition: {x: 30.561556, y: 0, z: -1.2375569}
+  delay: 5
+  travelTime: 3
+  onTravelBegin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 426567696e456666656374
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTravelEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 456e64456666656374
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  intEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 426567696e456666656374
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e65
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Gears.UnityIntEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &11480312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd0b3aa83d98474ebce8009f41e429c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlled: 1
+  manager: {fileID: 11413394}
+  mode: 0
+  spawnAreaShape: 0
+  spawnPointType: 0
+  auto: 0
+  autoRespawn: 0
+  recoverTime: 60
+  hordeLod: 0
+  player: {fileID: 0}
+  activeDistance: 50
+  hordeActiveRefreshTime: 0.5
+  hordeTag: 
+  spawnState: 0
+  enemys: []
+  radius: 1.47
+  spawnEffect: {fileID: 0}
+  separateDistance: 5
+  spawnBuffer: 0.5
+  etc: 0
+  hordePower: 1
+  drawPoint: 0
+  selfPoints:
+  - {x: 1.4142137, y: 0, z: -1.4142135}
+  - {x: -1.4142135, y: 0, z: -1.4142135}
+  - {x: -1.4142134, y: 0, z: 1.4142139}
+  - {x: 1.414214, y: 0, z: 1.4142131}
+  worldPoints:
+  - {x: 7.098894, y: 0, z: -2.048894}
+  - {x: 2.941106, y: 0, z: -2.048894}
+  - {x: 2.9411063, y: 0, z: 2.1088943}
+  - {x: 7.0988946, y: 0, z: 2.1088932}
+  closePoints: []
+  onSequenceStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onSequenceFinish:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  lastSpawnPosition: {x: 3.4028235e+38, y: 3.4028235e+38, z: 3.4028235e+38}
+--- !u!114 &11483168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd0b3aa83d98474ebce8009f41e429c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlled: 1
+  manager: {fileID: 11413394}
+  mode: 0
+  spawnAreaShape: 0
+  spawnPointType: 0
+  auto: 0
+  autoRespawn: 0
+  recoverTime: 60
+  hordeLod: 0
+  player: {fileID: 0}
+  activeDistance: 50
+  hordeActiveRefreshTime: 0.5
+  hordeTag: 
+  spawnState: 0
+  enemys: []
+  radius: 1.47
+  spawnEffect: {fileID: 0}
+  separateDistance: 5
+  spawnBuffer: 0.5
+  etc: 0
+  hordePower: 1
+  drawPoint: 0
+  selfPoints:
+  - {x: 1.4142135, y: 0, z: -1.4142135}
+  - {x: -1.4142135, y: 0, z: -1.4142135}
+  - {x: -1.4142133, y: 0, z: 1.4142138}
+  - {x: 1.414214, y: 0, z: 1.4142131}
+  worldPoints:
+  - {x: -2.3011062, y: 0, z: -5.418894}
+  - {x: -6.458894, y: 0, z: -5.418894}
+  - {x: -6.458894, y: 0, z: -1.2611055}
+  - {x: -2.3011055, y: 0, z: -1.2611067}
+  closePoints: []
+  onSequenceStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onSequenceFinish:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  lastSpawnPosition: {x: 3.4028235e+38, y: 3.4028235e+38, z: 3.4028235e+38}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 153850}
+  m_IsPrefabParent: 1

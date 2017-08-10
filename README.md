@@ -22,6 +22,30 @@
 - **FlipEffect**設定要顯示的數字範圍和動畫時間
 - **ShutterEffect**設定動畫時間, 動畫時間數值為單次播放時間, e.g. 設定0.5, 淡入時間加上淡出時間共需1秒
 
+# Portal #
+## Value ##
+### Setting ###
+- Vector3 **targetPosition** *get; set;*
+	- 傳送目的地的世界座標
+	- 編輯視窗有輔助工具
+    - *![](http://i.imgur.com/JPydIuy.png)
+- int **delay** *get; set;*
+	- 傳送等待時間 e.g. 給UI的倒數時間
+- float **travelTime** *get; set;*
+	- 傳送過場時間 e.g. 留給UI播放過場效果
+### Event ###
+- UnityEvent **onTravelBegin** *get; set;*
+	- 傳送開始時發送
+- UnityEvent **onTravelEnd** *get; set;*
+	- 傳送結束後發送
+- UnityEvent **intEvent** *get; set;*
+	- 等待時發送, 傳送倒數時間int, 每秒發送一次
+## Function ##
+- void **ManualPortal** (GameObject **targetObject**)
+	- 傳送目標物件
+- void **ManualPortal** (GameObject **targetObject**, int **delayTime**)
+	- 等待一段時間後傳送目標物件
+
 # Enemy Wave Manager #
 ## Value ##
 ### State ###
